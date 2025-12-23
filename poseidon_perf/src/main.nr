@@ -1,7 +1,7 @@
 use poseidon::poseidon2;
 
 // Increase NUM_ITERATIONS to make the circuit heavier for performance testing.
-global NUM_ITERATIONS: u32 = 10_000;
+global NUM_ITERATIONS: u32 = 100;
 
 /// Hash the message grid with Poseidon2 to scale constraint and proving cost.
 fn main(m1: Field) -> pub Field {

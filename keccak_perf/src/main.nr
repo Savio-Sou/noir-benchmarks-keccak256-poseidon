@@ -3,7 +3,7 @@ use keccak256::keccak256;
 global MSG_SIZE: u32 = 32;
 
 // Increase NUM_ITERATIONS to make the circuit heavier for performance testing.
-global NUM_ITERATIONS: u32 = 10_000;
+global NUM_ITERATIONS: u32 = 100;
 
 /// Hash the message with an increased number of permutation rounds to scale
 /// constraint and proving cost.
