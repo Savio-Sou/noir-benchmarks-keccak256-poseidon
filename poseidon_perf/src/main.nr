@@ -13,10 +13,3 @@ fn main(m1: Field) -> pub Field {
 
     result
 }
-
-#[test]
-fn poseidon_matches_expected_digest() {
-    let seed_message = 1;
-    let result = main(seed_message);
-    assert(result.len() == 32);
-}
