@@ -10,7 +10,7 @@ global NUM_ITERATIONS: u32 = 100;
 fn main(m1: [u8; 32]) -> pub [u8; 32] {
     let mut result = m1;
 
-    for i in 0..NUM_ITERATIONS {
+    for _i in 0..NUM_ITERATIONS {
         result = keccak256(result, MSG_SIZE);
     }
 

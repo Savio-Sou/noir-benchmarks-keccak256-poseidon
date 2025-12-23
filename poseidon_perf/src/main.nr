@@ -7,7 +7,7 @@ global NUM_ITERATIONS: u32 = 100;
 fn main(m1: Field) -> pub Field {
     let mut result: Field = m1;
 
-    for i in 0..NUM_ITERATIONS {
+    for _i in 0..NUM_ITERATIONS {
         result = poseidon2::Poseidon2::hash([result; 1], 1);
     }
 
